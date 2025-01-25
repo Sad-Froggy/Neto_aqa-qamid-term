@@ -1,14 +1,12 @@
 version: '3.7'
 services:
-  mysql:
-    image: mysql:8.0.18
-    restart: always
+  postgres:
+    image: postgres:14-alpine
     ports:
-      - '3306:3306'
+      - '5432:5432'
     volumes:
-      - ./data:/var/lib/mysql
+      - ./data:/var/lib/postgresql/data
     environment:
-      - MYSQL_RANDOM_ROOT_PASSWORD=yes
-      - MYSQL_DATABASE=netoQA
-      - MYSQL_USER=admin
-      - MYSQL_PASSWORD=password
+      - POSTGRES_DB=db
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password
