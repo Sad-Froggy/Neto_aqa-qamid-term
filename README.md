@@ -12,4 +12,6 @@
 
 Документация
 
-[план автоматизации](documentation/TestPlan.md)
+* [План автоматизации](documentation/TestPlan.md)
+* [Отчет о проведенном тестировании](documentation/Report.md)
+* [Отчет по итогам автоматизации тестирования](documentation/Summary.md)
